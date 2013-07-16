@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/cn/com/karakal/tyqk/ws/AlbumInfo.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/ContentInfo.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/ReceiveTyqkDataService.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/ReceiveTyqkDataServiceBean.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/ReceiveTyqkDataServiceBeanLocator.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/ReceiveTyqkDataServicePortSoapBindingStub.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/Response.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/SyncCrbtDeployResultEvt.java=UTF-8
+encoding//src/cn/com/karakal/tyqk/ws/SyncCrbtProductEvt.java=UTF-8
+encoding/<project>=UTF-8
