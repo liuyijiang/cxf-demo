@@ -1,0 +1,11 @@
+<?xml version = "1.0"?>
+<endpoints version="2.0"
+	xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+	<endpoint name="DeployNetServicePort"
+		implementation="com.redcloud.service.content.DeployNetServicePortImpl"
+		url-pattern="/DeployNetServicePort">
+	</endpoint>
+	<endpoint name="ManualSendProductDataServiceBeanPort"
+		implementation="cn.com.karakal.tyqk.ws.ManualSendProductDataServiceBeanPortImpl"
+		url-pattern="/ManualSendProductDataServiceBeanPort">
+	</endpoint></endpoints>

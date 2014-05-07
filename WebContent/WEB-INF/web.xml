@@ -20,6 +20,25 @@
     <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+  	<description>
+  		JAX-WS endpoint - DeployNetServiceService
+  	</description>
+  	<display-name>DeployNetServiceService</display-name>
+  	<servlet-name>DeployNetServiceService</servlet-name>
+  	<servlet-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServlet
+  	</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeployNetServiceService</servlet-name>
+  	<url-pattern>/ManualSendProductDataServiceBeanPort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeployNetServiceService</servlet-name>
+  	<url-pattern>/DeployNetServicePort</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>CXFServlet</servlet-name>
     <url-pattern>/ws/*</url-pattern>
@@ -27,4 +46,8 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-</web-app>
+  <listener>
+  	<listener-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+  	</listener-class>
+  </listener></web-app>
