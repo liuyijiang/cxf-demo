@@ -1,416 +1,245 @@
-/**
- * SyncCrbtProductEvt.java
- *
- * This file was auto-generated from WSDL
- * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
- */
-
 package cn.com.karakal.tyqk.ws;
 
-public class SyncCrbtProductEvt  implements java.io.Serializable {
-    private cn.com.karakal.tyqk.ws.ContentInfo contentInfo;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
-    private java.lang.String eventType;
+/**
+ * <p>
+ * Java class for syncCrbtProductEvt complex type.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * 
+ * <pre>
+ * &lt;complexType name="syncCrbtProductEvt">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="contentInfo" type="{http://ws.tyqk.karakal.com.cn}contentInfo" minOccurs="0"/>
+ *         &lt;element name="eventType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="key" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="PID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="provinceID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="reqType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="SEQ" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeStamp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="transactionID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "syncCrbtProductEvt", propOrder = { "contentInfo", "eventType",
+		"key", "pid", "provinceID", "reqType", "seq", "timeStamp",
+		"transactionID" })
+public class SyncCrbtProductEvt {
 
-    private java.lang.String key;
+	protected ContentInfo contentInfo;
+	protected String eventType;
+	protected String key;
+	@XmlElement(name = "PID")
+	protected String pid;
+	protected String provinceID;
+	protected String reqType;
+	@XmlElement(name = "SEQ")
+	protected String seq;
+	protected String timeStamp;
+	protected String transactionID;
 
-    private java.lang.String PID;
+	/**
+	 * Gets the value of the contentInfo property.
+	 * 
+	 * @return possible object is {@link ContentInfo }
+	 * 
+	 */
+	public ContentInfo getContentInfo() {
+		return contentInfo;
+	}
 
-    private java.lang.String provinceID;
+	/**
+	 * Sets the value of the contentInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ContentInfo }
+	 * 
+	 */
+	public void setContentInfo(ContentInfo value) {
+		this.contentInfo = value;
+	}
 
-    private java.lang.String reqType;
+	/**
+	 * Gets the value of the eventType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getEventType() {
+		return eventType;
+	}
 
-    private java.lang.String SEQ;
+	/**
+	 * Sets the value of the eventType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setEventType(String value) {
+		this.eventType = value;
+	}
 
-    private java.lang.String timeStamp;
+	/**
+	 * Gets the value of the key property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getKey() {
+		return key;
+	}
 
-    private java.lang.String transactionID;
+	/**
+	 * Sets the value of the key property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setKey(String value) {
+		this.key = value;
+	}
 
-    public SyncCrbtProductEvt() {
-    }
+	/**
+	 * Gets the value of the pid property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPID() {
+		return pid;
+	}
 
-    public SyncCrbtProductEvt(
-           cn.com.karakal.tyqk.ws.ContentInfo contentInfo,
-           java.lang.String eventType,
-           java.lang.String key,
-           java.lang.String PID,
-           java.lang.String provinceID,
-           java.lang.String reqType,
-           java.lang.String SEQ,
-           java.lang.String timeStamp,
-           java.lang.String transactionID) {
-           this.contentInfo = contentInfo;
-           this.eventType = eventType;
-           this.key = key;
-           this.PID = PID;
-           this.provinceID = provinceID;
-           this.reqType = reqType;
-           this.SEQ = SEQ;
-           this.timeStamp = timeStamp;
-           this.transactionID = transactionID;
-    }
+	/**
+	 * Sets the value of the pid property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPID(String value) {
+		this.pid = value;
+	}
 
+	/**
+	 * Gets the value of the provinceID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getProvinceID() {
+		return provinceID;
+	}
 
-    /**
-     * Gets the contentInfo value for this SyncCrbtProductEvt.
-     * 
-     * @return contentInfo
-     */
-    public cn.com.karakal.tyqk.ws.ContentInfo getContentInfo() {
-        return contentInfo;
-    }
+	/**
+	 * Sets the value of the provinceID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setProvinceID(String value) {
+		this.provinceID = value;
+	}
 
+	/**
+	 * Gets the value of the reqType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getReqType() {
+		return reqType;
+	}
 
-    /**
-     * Sets the contentInfo value for this SyncCrbtProductEvt.
-     * 
-     * @param contentInfo
-     */
-    public void setContentInfo(cn.com.karakal.tyqk.ws.ContentInfo contentInfo) {
-        this.contentInfo = contentInfo;
-    }
+	/**
+	 * Sets the value of the reqType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setReqType(String value) {
+		this.reqType = value;
+	}
 
+	/**
+	 * Gets the value of the seq property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSEQ() {
+		return seq;
+	}
 
-    /**
-     * Gets the eventType value for this SyncCrbtProductEvt.
-     * 
-     * @return eventType
-     */
-    public java.lang.String getEventType() {
-        return eventType;
-    }
+	/**
+	 * Sets the value of the seq property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSEQ(String value) {
+		this.seq = value;
+	}
 
+	/**
+	 * Gets the value of the timeStamp property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTimeStamp() {
+		return timeStamp;
+	}
 
-    /**
-     * Sets the eventType value for this SyncCrbtProductEvt.
-     * 
-     * @param eventType
-     */
-    public void setEventType(java.lang.String eventType) {
-        this.eventType = eventType;
-    }
+	/**
+	 * Sets the value of the timeStamp property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTimeStamp(String value) {
+		this.timeStamp = value;
+	}
 
+	/**
+	 * Gets the value of the transactionID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTransactionID() {
+		return transactionID;
+	}
 
-    /**
-     * Gets the key value for this SyncCrbtProductEvt.
-     * 
-     * @return key
-     */
-    public java.lang.String getKey() {
-        return key;
-    }
-
-
-    /**
-     * Sets the key value for this SyncCrbtProductEvt.
-     * 
-     * @param key
-     */
-    public void setKey(java.lang.String key) {
-        this.key = key;
-    }
-
-
-    /**
-     * Gets the PID value for this SyncCrbtProductEvt.
-     * 
-     * @return PID
-     */
-    public java.lang.String getPID() {
-        return PID;
-    }
-
-
-    /**
-     * Sets the PID value for this SyncCrbtProductEvt.
-     * 
-     * @param PID
-     */
-    public void setPID(java.lang.String PID) {
-        this.PID = PID;
-    }
-
-
-    /**
-     * Gets the provinceID value for this SyncCrbtProductEvt.
-     * 
-     * @return provinceID
-     */
-    public java.lang.String getProvinceID() {
-        return provinceID;
-    }
-
-
-    /**
-     * Sets the provinceID value for this SyncCrbtProductEvt.
-     * 
-     * @param provinceID
-     */
-    public void setProvinceID(java.lang.String provinceID) {
-        this.provinceID = provinceID;
-    }
-
-
-    /**
-     * Gets the reqType value for this SyncCrbtProductEvt.
-     * 
-     * @return reqType
-     */
-    public java.lang.String getReqType() {
-        return reqType;
-    }
-
-
-    /**
-     * Sets the reqType value for this SyncCrbtProductEvt.
-     * 
-     * @param reqType
-     */
-    public void setReqType(java.lang.String reqType) {
-        this.reqType = reqType;
-    }
-
-
-    /**
-     * Gets the SEQ value for this SyncCrbtProductEvt.
-     * 
-     * @return SEQ
-     */
-    public java.lang.String getSEQ() {
-        return SEQ;
-    }
-
-
-    /**
-     * Sets the SEQ value for this SyncCrbtProductEvt.
-     * 
-     * @param SEQ
-     */
-    public void setSEQ(java.lang.String SEQ) {
-        this.SEQ = SEQ;
-    }
-
-
-    /**
-     * Gets the timeStamp value for this SyncCrbtProductEvt.
-     * 
-     * @return timeStamp
-     */
-    public java.lang.String getTimeStamp() {
-        return timeStamp;
-    }
-
-
-    /**
-     * Sets the timeStamp value for this SyncCrbtProductEvt.
-     * 
-     * @param timeStamp
-     */
-    public void setTimeStamp(java.lang.String timeStamp) {
-        this.timeStamp = timeStamp;
-    }
-
-
-    /**
-     * Gets the transactionID value for this SyncCrbtProductEvt.
-     * 
-     * @return transactionID
-     */
-    public java.lang.String getTransactionID() {
-        return transactionID;
-    }
-
-
-    /**
-     * Sets the transactionID value for this SyncCrbtProductEvt.
-     * 
-     * @param transactionID
-     */
-    public void setTransactionID(java.lang.String transactionID) {
-        this.transactionID = transactionID;
-    }
-
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof SyncCrbtProductEvt)) return false;
-        SyncCrbtProductEvt other = (SyncCrbtProductEvt) obj;
-        if (obj == null) return false;
-        if (this == obj) return true;
-        if (__equalsCalc != null) {
-            return (__equalsCalc == obj);
-        }
-        __equalsCalc = obj;
-        boolean _equals;
-        _equals = true && 
-            ((this.contentInfo==null && other.getContentInfo()==null) || 
-             (this.contentInfo!=null &&
-              this.contentInfo.equals(other.getContentInfo()))) &&
-            ((this.eventType==null && other.getEventType()==null) || 
-             (this.eventType!=null &&
-              this.eventType.equals(other.getEventType()))) &&
-            ((this.key==null && other.getKey()==null) || 
-             (this.key!=null &&
-              this.key.equals(other.getKey()))) &&
-            ((this.PID==null && other.getPID()==null) || 
-             (this.PID!=null &&
-              this.PID.equals(other.getPID()))) &&
-            ((this.provinceID==null && other.getProvinceID()==null) || 
-             (this.provinceID!=null &&
-              this.provinceID.equals(other.getProvinceID()))) &&
-            ((this.reqType==null && other.getReqType()==null) || 
-             (this.reqType!=null &&
-              this.reqType.equals(other.getReqType()))) &&
-            ((this.SEQ==null && other.getSEQ()==null) || 
-             (this.SEQ!=null &&
-              this.SEQ.equals(other.getSEQ()))) &&
-            ((this.timeStamp==null && other.getTimeStamp()==null) || 
-             (this.timeStamp!=null &&
-              this.timeStamp.equals(other.getTimeStamp()))) &&
-            ((this.transactionID==null && other.getTransactionID()==null) || 
-             (this.transactionID!=null &&
-              this.transactionID.equals(other.getTransactionID())));
-        __equalsCalc = null;
-        return _equals;
-    }
-
-    private boolean __hashCodeCalc = false;
-    public synchronized int hashCode() {
-        if (__hashCodeCalc) {
-            return 0;
-        }
-        __hashCodeCalc = true;
-        int _hashCode = 1;
-        if (getContentInfo() != null) {
-            _hashCode += getContentInfo().hashCode();
-        }
-        if (getEventType() != null) {
-            _hashCode += getEventType().hashCode();
-        }
-        if (getKey() != null) {
-            _hashCode += getKey().hashCode();
-        }
-        if (getPID() != null) {
-            _hashCode += getPID().hashCode();
-        }
-        if (getProvinceID() != null) {
-            _hashCode += getProvinceID().hashCode();
-        }
-        if (getReqType() != null) {
-            _hashCode += getReqType().hashCode();
-        }
-        if (getSEQ() != null) {
-            _hashCode += getSEQ().hashCode();
-        }
-        if (getTimeStamp() != null) {
-            _hashCode += getTimeStamp().hashCode();
-        }
-        if (getTransactionID() != null) {
-            _hashCode += getTransactionID().hashCode();
-        }
-        __hashCodeCalc = false;
-        return _hashCode;
-    }
-
-    // Type metadata
-    private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(SyncCrbtProductEvt.class, true);
-
-    static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://ws.tyqk.karakal.com.cn", "syncCrbtProductEvt"));
-        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("contentInfo");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "contentInfo"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://ws.tyqk.karakal.com.cn", "contentInfo"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("eventType");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "eventType"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("key");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "key"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("PID");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "PID"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("provinceID");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "provinceID"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("reqType");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "reqType"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("SEQ");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "SEQ"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("timeStamp");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "timeStamp"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("transactionID");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "transactionID"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-    }
-
-    /**
-     * Return type metadata object
-     */
-    public static org.apache.axis.description.TypeDesc getTypeDesc() {
-        return typeDesc;
-    }
-
-    /**
-     * Get Custom Serializer
-     */
-    public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
-           javax.xml.namespace.QName _xmlType) {
-        return 
-          new  org.apache.axis.encoding.ser.BeanSerializer(
-            _javaType, _xmlType, typeDesc);
-    }
-
-    /**
-     * Get Custom Deserializer
-     */
-    public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
-           javax.xml.namespace.QName _xmlType) {
-        return 
-          new  org.apache.axis.encoding.ser.BeanDeserializer(
-            _javaType, _xmlType, typeDesc);
-    }
+	/**
+	 * Sets the value of the transactionID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTransactionID(String value) {
+		this.transactionID = value;
+	}
 
 }

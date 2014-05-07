@@ -1,157 +1,79 @@
-/**
- * AlbumInfo.java
- *
- * This file was auto-generated from WSDL
- * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
- */
-
 package cn.com.karakal.tyqk.ws;
 
-public class AlbumInfo  implements java.io.Serializable {
-    private java.lang.String albumID;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
-    private java.lang.String albumName;
+/**
+ * <p>
+ * Java class for albumInfo complex type.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * 
+ * <pre>
+ * &lt;complexType name="albumInfo">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="albumID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="albumName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "albumInfo", propOrder = { "albumID", "albumName" })
+public class AlbumInfo {
 
-    public AlbumInfo() {
-    }
+	protected String albumID;
+	protected String albumName;
 
-    public AlbumInfo(
-           java.lang.String albumID,
-           java.lang.String albumName) {
-           this.albumID = albumID;
-           this.albumName = albumName;
-    }
+	/**
+	 * Gets the value of the albumID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAlbumID() {
+		return albumID;
+	}
 
+	/**
+	 * Sets the value of the albumID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAlbumID(String value) {
+		this.albumID = value;
+	}
 
-    /**
-     * Gets the albumID value for this AlbumInfo.
-     * 
-     * @return albumID
-     */
-    public java.lang.String getAlbumID() {
-        return albumID;
-    }
+	/**
+	 * Gets the value of the albumName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAlbumName() {
+		return albumName;
+	}
 
-
-    /**
-     * Sets the albumID value for this AlbumInfo.
-     * 
-     * @param albumID
-     */
-    public void setAlbumID(java.lang.String albumID) {
-        this.albumID = albumID;
-    }
-
-
-    /**
-     * Gets the albumName value for this AlbumInfo.
-     * 
-     * @return albumName
-     */
-    public java.lang.String getAlbumName() {
-        return albumName;
-    }
-
-
-    /**
-     * Sets the albumName value for this AlbumInfo.
-     * 
-     * @param albumName
-     */
-    public void setAlbumName(java.lang.String albumName) {
-        this.albumName = albumName;
-    }
-
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof AlbumInfo)) return false;
-        AlbumInfo other = (AlbumInfo) obj;
-        if (obj == null) return false;
-        if (this == obj) return true;
-        if (__equalsCalc != null) {
-            return (__equalsCalc == obj);
-        }
-        __equalsCalc = obj;
-        boolean _equals;
-        _equals = true && 
-            ((this.albumID==null && other.getAlbumID()==null) || 
-             (this.albumID!=null &&
-              this.albumID.equals(other.getAlbumID()))) &&
-            ((this.albumName==null && other.getAlbumName()==null) || 
-             (this.albumName!=null &&
-              this.albumName.equals(other.getAlbumName())));
-        __equalsCalc = null;
-        return _equals;
-    }
-
-    private boolean __hashCodeCalc = false;
-    public synchronized int hashCode() {
-        if (__hashCodeCalc) {
-            return 0;
-        }
-        __hashCodeCalc = true;
-        int _hashCode = 1;
-        if (getAlbumID() != null) {
-            _hashCode += getAlbumID().hashCode();
-        }
-        if (getAlbumName() != null) {
-            _hashCode += getAlbumName().hashCode();
-        }
-        __hashCodeCalc = false;
-        return _hashCode;
-    }
-
-    // Type metadata
-    private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(AlbumInfo.class, true);
-
-    static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://ws.tyqk.karakal.com.cn", "albumInfo"));
-        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("albumID");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "albumID"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("albumName");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "albumName"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-    }
-
-    /**
-     * Return type metadata object
-     */
-    public static org.apache.axis.description.TypeDesc getTypeDesc() {
-        return typeDesc;
-    }
-
-    /**
-     * Get Custom Serializer
-     */
-    public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
-           javax.xml.namespace.QName _xmlType) {
-        return 
-          new  org.apache.axis.encoding.ser.BeanSerializer(
-            _javaType, _xmlType, typeDesc);
-    }
-
-    /**
-     * Get Custom Deserializer
-     */
-    public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
-           javax.xml.namespace.QName _xmlType) {
-        return 
-          new  org.apache.axis.encoding.ser.BeanDeserializer(
-            _javaType, _xmlType, typeDesc);
-    }
+	/**
+	 * Sets the value of the albumName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAlbumName(String value) {
+		this.albumName = value;
+	}
 
 }

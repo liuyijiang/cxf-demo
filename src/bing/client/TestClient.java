@@ -14,8 +14,11 @@ public class TestClient {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		TestClient t = new TestClient();
-		t.testSaveFile();
+//		TestClient t = new TestClient();
+//		t.testSaveFile();
+		String str = "600597Y0056D";
+		System.out.println(str.substring(0,11));
+				
 	}
 
 	public void testSaveFile(){

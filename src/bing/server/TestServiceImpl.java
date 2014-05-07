@@ -7,11 +7,11 @@ import java.util.Date;
 
 import javax.jws.WebService;
 
-import com.guba.mogilefs.MogileFS;
-import com.guba.mogilefs.SimpleMogileFSImpl;
-
 import bing.bean.FileInfo;
 import bing.bean.User;
+
+import com.guba.mogilefs.MogileFS;
+import com.guba.mogilefs.SimpleMogileFSImpl;
 
 @WebService(endpointInterface = "bing.server.TestService", serviceName = "TestService")
 public class TestServiceImpl implements TestService {
